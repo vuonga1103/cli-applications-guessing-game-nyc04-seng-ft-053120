@@ -7,11 +7,13 @@ def run_guessing_game
   user_input = gets.chomp
   p "the user_input is #{user_input}"
   
-  if user_input == "exit"
+  case user_input
+  when "exit"
     puts "Goodbye!"
-  elsif user_input == random_number
+  when random_number
     puts "You guessed the correct number!"
   else
     puts "Sorry! The computer guessed #{random_number}."
-  end
+  end 
+  
 end
