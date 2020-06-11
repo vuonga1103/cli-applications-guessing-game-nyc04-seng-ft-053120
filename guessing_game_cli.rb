@@ -6,10 +6,10 @@ def run_guessing_game
   user_input = gets.chomp
   
   case user_input
-  when "exit"
-    puts "Goodbye!"
   when random_number.to_s
     puts "You guessed the correct number!"
+  when "exit"
+    puts "Goodbye!"
   else
     puts "Sorry! The computer guessed #{random_number}."
   end 
