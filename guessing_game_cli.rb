@@ -1,12 +1,11 @@
-require "pry"
-
 def run_guessing_game
   random_number = rand(1..6)
   
   puts "Guess a number between 1 and 6!"
-  binding.pry
+  p "the random_number is #{random_number}"
   
   user_input = gets.chomp
+  p "the user_input is #{user_input}"
   
   if user_input == "exit"
     puts "Goodbye!"
