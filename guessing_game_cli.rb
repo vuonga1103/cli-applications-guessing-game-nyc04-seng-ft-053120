@@ -6,7 +6,7 @@ def run_guessing_game
   
   user_input = gets.chomp
   p "the user_input is #{user_input}"
-  
+  p user_input.class
   case user_input
   when "exit"
     puts "Goodbye!"
